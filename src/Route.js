@@ -10,7 +10,9 @@ import Navbaritems from './Components/Navbar';
 function RouteConfig() {
     return (
         <Router>
+            <header>
             <Navbaritems />
+            </header>
             <Switch>
                 <Route exact path = '/' component={Home} />
                 <Route path = '/about' component={About} />

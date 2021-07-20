@@ -23,3 +23,30 @@ nav .active{
 nav .active:hover{
   color: white;
 }
+
+.productContainer{
+  display: flex;
+  flex-wrap: wrap;
+} 
+.productContainer img{
+  width: 300px;
+  height: 300px;
+  /* height: 75%; */
+}
+
+.productContainer .product{
+  box-shadow: 0 0 10px gray;
+  margin: 10px;
+  padding: 10px;
+  width: 31%;
+}
+
+.productContainer .shoeLink{
+
+  color: black;
+  text-decoration: none;
+}
+
+.productContainer .shoeLink:hover{
+  background-color: lightgray;
+}

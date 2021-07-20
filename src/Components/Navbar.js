@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbaritems() {
     // let linkClass = 'link';
@@ -16,11 +16,11 @@ export default function Navbaritems() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto text-center">
               <NavLink className='link' activeClassName='active' exact to='/'>Home</NavLink>
+              <NavLink className='link' activeClassName='active' exact to='/product'>Product</NavLink>
               <NavLink className='link' activeClassName='active' exact to='/about'>About Us</NavLink>
               <NavLink className='link' activeClassName='active' exact to='/contactus'>Contact Us</NavLink>
-              <NavLink className='link' activeClassName='active' exact to='/product'>Product</NavLink>
-              <NavLink className='link' activeClassName='active' exact to='/product/:id'>ProductItem</NavLink>
             </Nav>
+
           </Navbar.Collapse>
         </Container>
       </Navbar>
